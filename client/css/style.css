@@ -1,0 +1,19 @@
+#header {
+    height: 75px;
+    background-color: darkgoldenrod;
+}
+#mapdiv {
+    height: 650px;
+    background-color: salmon;
+}
+#side_panel  {
+    height:  650px;
+    background-color: beige;
+}
+#footer {
+    height: 75px;
+    background-color: darkgrey;
+}
+.attraction {
+    margin-bottom: 5px;
+}
