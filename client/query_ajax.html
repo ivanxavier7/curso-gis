@@ -25,7 +25,6 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script>
             $("#filterSubmit").click(function() {
-                window.alert("TESTE - 1");
                 $.ajax({
                     url:'query_ajax.php',
                     type:'POST',
@@ -36,7 +35,6 @@
                         $('#resultTable').html(response);
                     }
                 });
-                window.alert("TESTE - 3");
             });
         </script>
     </body>

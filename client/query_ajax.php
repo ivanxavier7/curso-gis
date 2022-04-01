@@ -1,5 +1,4 @@
 <?php
-    var_dump("Teste - 1");
     $it=$_POST['item_type'];
     $db = new PDO('pgsql:host=localhost;port=5432;dbname=gis_app;user=postgres');
     $sql = $db->prepare("SELECT item_id, coluna_1, coluna_2 FROM public.table_name WHERE coluna_1 = :it");
@@ -7,7 +6,6 @@
     $sql->execute($params);
     echo "<table class='table table-striped'>";
     echo "<tr><th>Item</th><th>Tipo</th><th>Valor</th>";
-    var_dump("Teste - 2");
     while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
         echo "<tr>";
         foreach ($row as $field=>$value) {
@@ -15,6 +13,5 @@
         }
         echo "</tr>";
     }
-    var_dump("Teste - 3");
     echo "</table>";
 ?>
